@@ -1,4 +1,28 @@
+.smartphone-viewport {
+    --unit: 5vh;
+    height: calc(var(--unit) * 16);
+    width: calc(var(--unit) * 9);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .smartphone-viewport::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    z-index: 100;
+  }
+  .smartphone-viewport::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
 
+  }
   :root {
     --animation-time: .3s;
   }
