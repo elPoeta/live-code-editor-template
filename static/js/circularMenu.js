@@ -1,7 +1,6 @@
-const floatButton = document.querySelector('#float-button');
-const circularMenu = document.querySelector('#circular-menu');
-
-floatButton.addEventListener('click', () => {
-    floatButton.classList.toggle('pulsed');
-    circularMenu.classList.toggle('expand');
+const floatButton = document.querySelector(".floating-btn");
+const circularMenu = document.querySelector("#circularMenu");
+floatButton.addEventListener("click", () => {
+  floatButton.classList.toggle("pulsed");
+  circularMenu.classList.toggle("active");
 });

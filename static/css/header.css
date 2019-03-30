@@ -1,19 +1,19 @@
 .header {
-    display: grid;
-    grid-template-columns: 50px 100px 1fr;
-    grid-template-rows: 40px;
-    background-color: #0808a0;
-    color: #fff;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 50px 100px 1fr;
+  grid-template-rows: 40px;
+  background-color: #216ddf;
+  color: #fff;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
-.header h1{
-    font-size: 1em;
-    font-weight: 700;
+.header h1 {
+  font-size: 1em;
+  font-weight: 700;
 }
 
-.nav-bar-icons{
-    justify-self: right;
-    padding: .6em;
+.nav-bar-icons {
+  justify-self: right;
+  padding: 0.6em;
 }
