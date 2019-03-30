@@ -1,0 +1,105 @@
+
+  :root {
+    --animation-time: .3s;
+  }
+  
+  .float-button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #0808a0;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    transition: -webkit-transform var(--animation-time);
+    transition: transform var(--animation-time);
+    transition: transform var(--animation-time), -webkit-transform var(--animation-time);
+    cursor: pointer;
+  }
+  .float-button.pulsed {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #0808a0;
+  }
+  .float-button::before, .float-button::after {
+    position: absolute;
+    width: 40%;
+    height: 4%;
+    content: '';
+    top: 49%;
+    left: 30%;
+    background: #fff;
+  }
+  .float-button::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .circular-menu {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    background: #0808a0;
+    bottom: -5.5rem;
+    right: -5.5rem;
+    border-radius: 50%;
+    -webkit-transform: scale(0) rotate(-180deg);
+            transform: scale(0) rotate(-180deg);
+    opacity: 0;
+    transition: all var(--animation-time);
+    z-index: 50;
+  }
+  .circular-menu.expand {
+    -webkit-transform: scale(1) rotate(0);
+            transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  .circular-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  .circular-menu i {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+  }
+  .circular-menu li {
+    position: absolute;
+    width: 2rem;
+    top: 2rem;
+    left: calc(50% - 1rem);
+    -webkit-transform-origin: center 6rem;
+            transform-origin: center 6rem;
+    text-align: center;
+  }
+  
+  .circular-menu li:nth-child(2) {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  .circular-menu li:nth-child(2) a {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  
+  .circular-menu li:nth-child(3) {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  .circular-menu li:nth-child(3) a {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  
+  .circular-menu li:nth-child(4) {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .circular-menu li:nth-child(4) a {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
