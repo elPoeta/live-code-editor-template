@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./static/css/header.css" />
     <link rel="stylesheet" href="./static/css/circularMenu.css" />
     <link rel="stylesheet" href="./static/css/editor.css" />
+    <link rel="stylesheet" href="./static/css/terminal.css" />
 
     <!-- JS -->
     <script src="./static/js/circularMenu.js" defer></script>
-    <script src="./static/js/editor.js" defer></script>
 
     <title>Browxy</title>
   </head>
@@ -35,8 +35,29 @@
         </div>
       </header>
       <main class="main">
-        <section class="editor">
-          <textarea rows="15" cols="40" placeholder="//code here"></textarea>
+        <section class="editor-container">
+          <textarea
+            rows="25"
+            cols="40"
+            placeholder="//code here"
+            class="editor"
+          ></textarea>
+        </section>
+        <section class="terminal">
+          <div class="terminal-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="panel">
+            <div class="action">
+              <div class="command">
+                <span class="symbol">$</span>
+                <input class="in" type="text" />
+              </div>
+              <div class="output"></div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
@@ -48,7 +69,7 @@
       <menu class="items-wrapper">
         <a href="#" class="menu-item fas fa-play"></a>
         <a href="#" class="menu-item fas fa-stop"></a>
-        <a href="#" class="menu-item fas fa-save"></a>
+        <a href="#" class="menu-item fas fa-cloud-upload-alt"></a>
         <a href="#" class="menu-item fas fa-file"></a>
       </menu>
     </div>
