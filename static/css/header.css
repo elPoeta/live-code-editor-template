@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 50px 100px 1fr;
+  grid-template-columns: 50px 120px 1fr;
   grid-template-rows: 40px;
   background-color: #216ddf;
   color: #fff;
@@ -9,8 +9,7 @@
   text-align: center;
 }
 .header h1 {
-  font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .nav-bar-icons {
