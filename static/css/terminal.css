@@ -6,31 +6,12 @@
   border-bottom: 2px solid;
   border-color: #9a9a9a;
 }
-
-.dot {
-  position: absolute;
-  top: 40%;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  display: inline-block;
+.terminal-header i {
+  padding: 3px;
+  margin-left: 5px;
+  margin-top: 3px;
+  align-self: center;
 }
-
-.red {
-  margin-left: 10px;
-  background: #fc625d;
-}
-
-.yellow {
-  margin-left: 30px;
-  background: #fdbc40;
-}
-
-.green {
-  margin-left: 50px;
-  background: #33c748;
-}
-
 .panel {
   height: 25vh;
   background: #27292c;
