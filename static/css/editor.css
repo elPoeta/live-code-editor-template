@@ -1,12 +1,8 @@
-.editor-container {
-  padding: 2px;
-}
 .editor {
-  background: url('../assets/img/linenumbers.png');
+  background: url("../assets/img/linenumbers.png");
   background-attachment: local;
   background-repeat: no-repeat;
   padding-left: 35px;
   padding-top: 10px;
   border-color: #ccc;
-  
 }
