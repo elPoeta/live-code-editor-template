@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./static/css/header.css" />
   <link rel="stylesheet" href="./static/css/circularMenu.css" />
   <link rel="stylesheet" href="./static/css/hamburgerMenu.css" />
+  <link rel="stylesheet" href="./static/css/comboBox.css" />
   <link rel="stylesheet" href="./static/css/editor.css" />
   <link rel="stylesheet" href="./static/css/tab.css" />
   <link rel="stylesheet" href="./static/css/terminal.css" />
@@ -40,9 +41,27 @@
       </nav>
       <h1>Browxy</h1>
       <div class="nav-bar-icons">
-        <i class="fas fa-folder-open"></i>
+        <i class="fas fa-folder-open" id="openModal"></i>
+        <div id="myCombo" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" id="closeComboMenu">&times;</a>
+          <div class="overlay-content">
+            <select>
+              <option value="1">C - Files</option>
+              <option value="2">C - HelloWorld</option>
+              <option value="3">C# - Files</option>
+              <option value="4">C# - HelloWorld</option>
+              <option value="5">Java - Files</option>
+              <option value="6">Java - HelloWorld</option>
+              <option value="7">Java - Maven</option>
+              <option value="8">Phyton - Files</option>
+              <option value="8">Phyton - HelloWorld</option>
+            </select>
+            <button>Open Example</button>
+          </div>
+        </div>
       </div>
     </header>
+
     <main class="main">
       <section class="editor-container">
         <div class=tab-container>
@@ -53,7 +72,7 @@
             </li>
         </div>
         <div class=outer-circle>
-          <textarea rows="18" cols="39"
+          <textarea rows="15" cols="39"
             placeholder="* Write in the first line the language preceded by a double-slash. Example: //java"
             class="editor"></textarea>
         </div>

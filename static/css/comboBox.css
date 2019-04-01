@@ -1,0 +1,13 @@
+.overlay-content select{
+    padding: 12px;
+    border-radius: .3em;
+}
+
+.overlay-content button{
+    border: none;
+    background: #fff;
+    color: rgb(47, 98, 238);
+    border-radius:.5em;
+    padding: 12px;
+    font-weight: 700;
+}
