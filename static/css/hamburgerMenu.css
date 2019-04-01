@@ -1,56 +1,54 @@
-.overlay {     
-    height: 0%;
-    width: 100%;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    background-color: rgb(47, 98, 238);
-    background-color: rgba(47, 98, 238, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s; 
-    
-  }
-  
- 
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center;
-    margin-top: 20px; 
-    
-  }
- 
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #fff;
-    display: block; 
-    transition: 0.3s; 
-  }
-  .overlay a i {
-      padding: 3px;
-  }
-  .overlay a:hover, .overlay a:focus {
-    color: #14154b;
-  }
-  
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  background-color: rgb(47, 98, 238);
+  background-color: rgba(47, 98, 238, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a i {
+  padding: 3px;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #14154b;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
- 
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
+}

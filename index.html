@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./static/css/circularMenu.css" />
     <link rel="stylesheet" href="./static/css/hamburgerMenu.css" />
     <link rel="stylesheet" href="./static/css/editor.css" />
+    <link rel="stylesheet" href="./static/css/tab.css" />
     <link rel="stylesheet" href="./static/css/terminal.css" />
 
     <!-- JS -->
@@ -52,12 +53,18 @@
       </header>
       <main class="main">
         <section class="editor-container">
-          <textarea
-            rows="25"
-            cols="39"
-            placeholder="//code here"
-            class="editor"
-          ></textarea>
+<div class=tab-container>
+  <ul class="tabs clearfix">
+   
+    <li class=active>
+      Untitled (not saved)<span class="close-tab">&#xff58;</span>
+    </li>
+</div>
+<div class=outer-circle>
+    <textarea rows="25" cols="39" placeholder="//USE THIS EDITOR TO CREATE QUICKLY A PROJECT FROM YOUR CODE // * To do so: //   * Delete this comment //   * Write in the first line the language preceded by a double-slash. Example: //java (available languages: c,c++,c#,java,python,php) //   * Paste or Write your code //   * Click the START button // After your project is created click START again to execute it" class="editor"></textarea>
+</div>
+
+        
         </section>
         <section class="terminal">
           <div class="terminal-header">
